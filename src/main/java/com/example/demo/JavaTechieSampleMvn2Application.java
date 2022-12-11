@@ -14,6 +14,7 @@ public class JavaTechieSampleMvn2Application {
 		System.out.println("syso first application");
 		Log.debug("debug My first application");
 		Log.info("info My first application");
+		Log.info("info My Second cmd");
 	}
 	public static void main(String[] args) {
 		SpringApplication.run(JavaTechieSampleMvn2Application.class, args);
