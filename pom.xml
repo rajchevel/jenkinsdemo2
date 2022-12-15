@@ -55,7 +55,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>spring-boot-aws</finalName>
+		<finalName>spring-boot-k8s-demo</finalName>
 	</build>
 	<repositories>
 		<repository>

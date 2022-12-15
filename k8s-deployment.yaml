@@ -1,0 +1,21 @@
+apiVersion: app/v1
+kind: deployment
+metadata: 
+  name: spring-boot-k8s-demo #Kubernetes resource kind we are creating
+spec:
+  selector:
+    matchLabels:
+      app: spring-boot-k8s-demo
+  replicas: 3 #Number of Replicas that will created for this Deployment
+  template:
+    metadata:
+      labels:
+        app: spring-boot-k8s-demo
+    spec:
+      containers:
+        - name: spring-boot-k8s-demo
+          image: rajaraman2122/spring-boot-k8s-demo:rajaraman2122
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8081    
+          
